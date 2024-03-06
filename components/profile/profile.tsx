@@ -2,7 +2,7 @@ import styles from "./profile.module.sass";
 import { MdEmail } from "react-icons/md";
 import { PiPhoneFill, PiUserFill } from "react-icons/pi";
 
-function Profile() {
+export default function Profile() {
   const profileData = {
     name: "박정선",
     phone: "010-9792-9767",
@@ -30,5 +30,3 @@ function Profile() {
     </ul>
   );
 }
-
-export default Profile;
