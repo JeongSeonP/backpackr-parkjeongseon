@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className={styles.h1}>백패커 프론트엔드 과제</h1>
       <Profile />
       <Section title={"1. 카드 UI"}>
-        <div>카드</div>
+        <CardList />
       </Section>
       <Section title={"2. 입력 폼 UI"}>
         <div>입력폼</div>

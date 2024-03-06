@@ -1,0 +1,126 @@
+.cardItem
+  display: flex
+  margin-bottom: 16px 
+  border-radius: 4px
+  overflow: hidden
+  border: 1.5px solid $medium-color
+  background: $light-color
+
+.horizontalCard
+  flex-direction: row
+  width: 50%
+  height: $horizontal-thumbnail-height
+  .cardThumbCover
+    width: 40%
+
+.verticalCard
+  flex-direction: column
+  width: 20%
+  height: fit-content
+  .cardThumbCover
+    height: $vertical-thumbnail-height
+
+.cardThumbCover
+  position: relative
+  
+.cardThumbImage
+  object-fit: cover
+  object-position: 50% 50%
+
+.cardTop
+  padding: 8px 10px
+
+.cardLabel
+  color: $grey-color
+  font-size: $small-font-size
+  margin-bottom: 10px
+
+.cardTitle
+  font-weight: 600
+  margin-bottom: 35px
+
+.cardText
+  display: flex
+  gap: 5px
+  justify-content: flex-start
+  align-items: flex-end
+  margin-bottom: 10px
+
+.highlightText
+  color: $point-red-color
+  font-weight: 500
+
+.crossOutText
+  color: $grey-color
+  font-size: $x-small-font-size
+  text-decoration-line: line-through
+
+.cardBottom
+  display: flex
+  flex-direction: column
+  align-items:center
+  justify-content: center
+  gap: 8px
+  min-height: 60px
+  padding: 10px
+
+.verticalCard
+  .cardBottom
+    border-top: 1.5px solid $medium-color
+    
+.singleLineComment
+  font-size: $small-font-size
+  @include ellipsis
+
+.cardReview
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 60%
+  overflow: hidden
+  padding: 18px
+
+.commentTitle
+  font-weight: 700
+  @include ellipsis
+
+.multiLiensComment
+  color: $dark-grey-color
+  font-weight: 500
+  @include multi-ellipsis($normal-font-size, $normal-line-height, 3)
+
+.ratingBlock
+  display: flex
+  gap: 5px
+  justify-content: flex-start
+  align-items: flex-start
+  color: $grey-color
+
+.userName
+  font-size: $small-font-size
+  &::before
+    content: ''
+    display: inline-block
+    width: 1.8px
+    height: 11px
+    margin: 0 5px
+    background-color: $grey-color
+
+@media(max-width: 1024px) 
+  .horizontalCard
+    width: 60%
+  .verticalCard
+    width: calc(33% - 16px)
+
+@media(max-width: 768px) 
+  .horizontalCard
+    width: 100%
+  .verticalCard
+    width: calc(50% - 16px)
+  
+@media(max-width: 640px) 
+  .horizontalCard
+    width: 100%
+  .verticalCard
+    width: 100%
+  
