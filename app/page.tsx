@@ -2,6 +2,7 @@ import styles from "./page.module.sass";
 import Profile from "@/components/profile/profile";
 import Section from "@/components/common/section";
 import CardList from "@/components/cardList/cardList";
+import Form from "@/components/form/form";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <CardList />
       </Section>
       <Section title={"2. 입력 폼 UI"}>
-        <div>입력폼</div>
+        <Form />
       </Section>
     </main>
   );

@@ -1,0 +1,43 @@
+.textInputContainer
+  display: flex
+  gap: 2px
+  font-size: $small-font-size
+
+.textInputBlock
+  position: relative
+  width: 100%
+  height: 80px
+  border: 1.5px solid $medium-color
+
+.input
+  width: 100%
+  height: 100%
+  padding: 8px 10px
+  resize: none
+  border: none
+  outline: none
+  &[disabled]
+    background: $light-color
+    cursor: not-allowed
+    &::placeholder
+      color: $point-red-color
+  &[readonly]
+    background: $light-color
+    cursor: default
+ 
+.activeInputBlock
+  border: 1.5px solid $point-green-color
+  
+.remainingLength
+  position: absolute
+  bottom: 5px
+  right: 10px
+  color: $grey-color
+
+.saveButton
+  width: 90px
+  border: 1.5px solid $medium-color
+  background: inherit
+  color: $point-green-color
+  font-weight: 500
+
