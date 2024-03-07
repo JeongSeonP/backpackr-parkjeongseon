@@ -1,4 +1,8 @@
 .cardItem
+  width: 100%
+
+.cardItemContainer
+  width: 100%
   display: flex
   margin-bottom: 16px 
   border-radius: 4px
@@ -7,17 +11,20 @@
   background: $light-color
 
 .horizontalCard
-  flex-direction: row
   width: 50%
-  height: $horizontal-thumbnail-height
+  .cardItemContainer
+    flex-direction: row
   .cardThumbCover
     width: 40%
+    height: $horizontal-thumbnail-height
 
 .verticalCard
-  flex-direction: column
   width: 20%
   height: fit-content
+  .cardItemContainer
+    flex-direction: column
   .cardThumbCover
+    width: 100%
     height: $vertical-thumbnail-height
 
 .cardThumbCover
