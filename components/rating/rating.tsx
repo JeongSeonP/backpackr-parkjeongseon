@@ -1,6 +1,4 @@
 import styles from "./rating.module.sass";
-import { FaCircle } from "react-icons/fa";
-
 interface RatingProps {
   ratingValue: number;
 }
@@ -10,19 +8,18 @@ export default function Rating({ ratingValue }: RatingProps) {
   console.log(Array(5).fill(null));
 
   return (
-    <div className={styles.ratingBox}>
-      {Array(5)
-        .fill(null)
-        .map((_, idx) => (
-          <span key={idx} className={styles.ratingCircle} />
+    <>
+      <div className={styles.ratingBox} aria-hidden>
+        {Array.from({ length: 5 }, (_, idx) => idx + 1).map((number) => (
+          <span
+            key={number}
+            className={`${styles.ratingCircle} ${
+              number <= roundedRating && styles.activeRatingCircle
+            }`}
+          />
         ))}
-      <div className={styles.activeRatingBox}>
-        {Array(roundedRating)
-          .fill(null)
-          .map((_, idx) => (
-            <span key={idx} className={styles.activeRatingCircle} />
-          ))}
       </div>
-    </div>
+      <span className={styles.ratingValue}>별점:{roundedRating}</span>
+    </>
   );
 }
