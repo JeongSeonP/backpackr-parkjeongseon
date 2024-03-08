@@ -22,3 +22,11 @@
   clip: rect(0, 0, 0, 0)
   white-space: nowrap
   border-width: 0
+
+@mixin box-shadow-sm
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)
+
+@mixin white-backdrop-blur
+  background-color: rgb(255 255 255 / 90%)
+  backdrop-filter: blur(10px)
+  @include box-shadow-sm
