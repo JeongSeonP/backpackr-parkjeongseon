@@ -16,14 +16,32 @@
   resize: none
   border: none
   outline: none
+
   &[disabled]
     background: $light-color
     cursor: not-allowed
     &::placeholder
       color: $point-red-color
+
   &[readonly]
     background: $light-color
     cursor: default
+
+  &::-webkit-scrollbar 
+    width: 8px
+
+  &::-webkit-scrollbar-track 
+    background: $white-color
+    border-radius: 5px
+
+  &::-webkit-scrollbar-thumb 
+    background: $grey-color
+    border-radius: 5px
+
+  &::-webkit-scrollbar-thumb:hover 
+    background: $dark-grey-color
+
+
  
 .activeInputBlock
   border: 1.5px solid $point-green-color
@@ -40,4 +58,5 @@
   background: inherit
   color: $point-green-color
   font-weight: 500
+  cursor: pointer
 

@@ -5,7 +5,6 @@ interface RatingProps {
 
 export default function Rating({ ratingValue }: RatingProps) {
   const roundedRating = Math.round(ratingValue);
-  console.log(Array(5).fill(null));
 
   return (
     <>
