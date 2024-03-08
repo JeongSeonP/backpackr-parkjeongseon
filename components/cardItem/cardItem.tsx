@@ -3,7 +3,7 @@ import {
   CardDirections,
   HorizontalCardData,
   VerticalCardData,
-} from "@/app/db/cardMockData";
+} from "@/db/cardMockData";
 import Image from "next/image";
 import defaultThumbnail from "@/public/assets/thumbnail.jpg";
 import Rating from "../rating/rating";
@@ -22,16 +22,14 @@ export default function CardItem({ direction, data }: CardItemProps) {
     const verticalData = data as VerticalCardData;
     return (
       <li className={`${styles.cardItem} ${cardStyle}`}>
-        <Link
-          href={`/items/${verticalData.itemId}`}
-          className={styles.cardItemContainer}
-        >
+        <Link href={"/"} className={styles.cardItemContainer}>
           <div className={styles.cardThumbCover}>
             <Image
               src={verticalData.thumbnail ?? defaultThumbnail}
               sizes="33vw"
               fill
               alt="썸네일 이미지"
+              priority
               className={styles.cardThumbImage}
             />
           </div>
@@ -66,16 +64,14 @@ export default function CardItem({ direction, data }: CardItemProps) {
     const horizontalData = data as HorizontalCardData;
     return (
       <li className={`${styles.cardItem} ${cardStyle}`}>
-        <Link
-          href={`/reviews/${horizontalData.reviewId}`}
-          className={styles.cardItemContainer}
-        >
+        <Link href={"/"} className={styles.cardItemContainer}>
           <div className={styles.cardThumbCover}>
             <Image
               src={horizontalData.thumbnail ?? defaultThumbnail}
               sizes="33vw"
               fill
               alt="썸네일 이미지"
+              priority
               className={styles.cardThumbImage}
             />
           </div>

@@ -1,6 +1,6 @@
 import styles from "./cardList.module.sass";
 import CardItem from "../cardItem/cardItem";
-import { horizontalCardData, verticalCardData } from "@/app/db/cardMockData";
+import { horizontalCardData, verticalCardData } from "@/db/cardMockData";
 
 export default function CardList() {
   return (

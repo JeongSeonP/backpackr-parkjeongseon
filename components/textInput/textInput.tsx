@@ -2,7 +2,7 @@
 
 import { ChangeEvent, useRef, useState } from "react";
 import styles from "./textInput.module.sass";
-import { TextInputOption } from "../form/form";
+import { TextInputOption } from "@/db/inputOptions";
 
 interface TextInputProps {
   option: TextInputOption;
@@ -41,7 +41,11 @@ export default function TextInput({ option }: TextInputProps) {
           {maxInputLength - inputValue.length}
         </span>
       </div>
-      {isTyping.current && <button className={styles.saveButton}>Save</button>}
+      {isTyping.current && (
+        <button type="submit" className={styles.saveButton}>
+          Save
+        </button>
+      )}
     </div>
   );
 }
