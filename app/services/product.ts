@@ -3,6 +3,7 @@ import { API_URL } from "../constants/urls";
 export async function getProductList() {
   try {
     const res = await fetch(`${API_URL}/api/products`, {
+      headers: { "Content-type": "application/json" },
       next: { tags: ["products"] },
     });
     const { products } = await res.json();

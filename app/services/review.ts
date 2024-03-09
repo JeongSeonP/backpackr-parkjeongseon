@@ -3,6 +3,7 @@ import { API_URL } from "../constants/urls";
 export async function getReviewList() {
   try {
     const res = await fetch(`${API_URL}/api/reviews`, {
+      headers: { "Content-type": "application/json" },
       next: { tags: ["reviews"] },
     });
     const { reviews } = await res.json();
