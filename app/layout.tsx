@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/common/header";
 
 const inter = Inter({ subsets: ["latin"] });
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "백패커 과제 - 박정선",

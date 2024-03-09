@@ -4,7 +4,7 @@ export async function getReviewList() {
   try {
     const res = await fetch(`${API_URL}/api/reviews`, {
       headers: { "Content-type": "application/json" },
-      next: { tags: ["reviews"] },
+      cache: "no-store",
     });
     const { reviews } = await res.json();
     return reviews;

@@ -4,7 +4,7 @@ export async function getProductList() {
   try {
     const res = await fetch(`${API_URL}/api/products`, {
       headers: { "Content-type": "application/json" },
-      next: { tags: ["products"] },
+      cache: "no-store",
     });
     const { products } = await res.json();
     return products;
