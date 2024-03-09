@@ -52,7 +52,7 @@ export const verticalCardData: VerticalCardData[] = [
 
 export const horizontalCardData: HorizontalCardData[] = [
   {
-    reviewId: 1,
+    reviewId: 4,
     thumbnail: null,
     rating: 3.2,
     commentTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -61,3 +61,11 @@ export const horizontalCardData: HorizontalCardData[] = [
     userName: "John Doe",
   },
 ];
+
+export function getProducts() {
+  return verticalCardData;
+}
+
+export function getReviews() {
+  return horizontalCardData;
+}

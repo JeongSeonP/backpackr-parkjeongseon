@@ -1,14 +1,19 @@
 import styles from "./cardList.module.sass";
 import CardItem from "../cardItem/cardItem";
-import { horizontalCardData, verticalCardData } from "@/db/cardMockData";
+import { HorizontalCardData, VerticalCardData } from "@/db/cardMockData";
+import { getProductList } from "@/app/services/product";
+import { getReviewList } from "@/app/services/review";
 
-export default function CardList() {
+export default async function CardList() {
+  const productList: VerticalCardData[] = await getProductList();
+  const reviewList: HorizontalCardData[] = await getReviewList();
+
   return (
     <ul className={styles.cardList}>
-      {verticalCardData.map((data) => (
+      {productList.map((data) => (
         <CardItem key={data.itemId} direction={"vertical"} data={data} />
       ))}
-      {horizontalCardData.map((data) => (
+      {reviewList.map((data) => (
         <CardItem key={data.reviewId} direction={"horizontal"} data={data} />
       ))}
     </ul>
