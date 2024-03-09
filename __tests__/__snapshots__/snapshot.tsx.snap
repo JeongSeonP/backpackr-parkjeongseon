@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders cardItem unchanged 1`] = `
+<div>
+  <li
+    class="cardItem verticalCard"
+  >
+    <a
+      class="cardItemContainer"
+      href="/"
+    >
+      <div
+        class="cardThumbCover"
+      >
+        <img
+          alt="썸네일 이미지"
+          class="cardThumbImage"
+          data-nimg="fill"
+          decoding="async"
+          fetchpriority="high"
+          sizes="33vw"
+          src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+      <div>
+        <div
+          class="cardTop"
+        >
+          <div
+            class="cardLabel"
+          >
+            Card Label
+          </div>
+          <div
+            class="cardTitle"
+          >
+            Card Title
+          </div>
+          <div
+            class="cardText"
+          >
+            <div
+              class="highlightText"
+            >
+              Hilight
+            </div>
+            <div
+              class="crossOutText"
+            >
+              Cross out
+            </div>
+          </div>
+        </div>
+        <div
+          class="cardBottom"
+        >
+          <div
+            aria-hidden="true"
+            class="ratingBox"
+          >
+            <span
+              class="ratingCircle activeRatingCircle"
+            />
+            <span
+              class="ratingCircle activeRatingCircle"
+            />
+            <span
+              class="ratingCircle activeRatingCircle"
+            />
+            <span
+              class="ratingCircle false"
+            />
+            <span
+              class="ratingCircle false"
+            />
+          </div>
+          <span
+            class="ratingValue"
+          >
+            별점:
+            3
+          </span>
+          <p
+            class="singleLineComment"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta fugit et nam enim neque delectus, repellendus adipisci dolore nobis corrupti, impedit nemo laboriosam. Tempora unde quidem earum sapiente repellendus.
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+  <li
+    class="cardItem horizontalCard"
+  >
+    <a
+      class="cardItemContainer"
+      href="/"
+    >
+      <div
+        class="cardThumbCover"
+      >
+        <img
+          alt="썸네일 이미지"
+          class="cardThumbImage"
+          data-nimg="fill"
+          decoding="async"
+          fetchpriority="high"
+          sizes="33vw"
+          src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+      <div
+        class="cardReview"
+      >
+        <div
+          class="commentTitle"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div
+          class="multiLiensComment"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta fugit et nam enim neque delectus, repellendus adipisci dolore nobis corrupti, impedit nemo laboriosam. Tempora unde quidem earum sapiente repellendus.
+        </div>
+        <div
+          class="ratingBlock"
+        >
+          <div
+            aria-hidden="true"
+            class="ratingBox"
+          >
+            <span
+              class="ratingCircle activeRatingCircle"
+            />
+            <span
+              class="ratingCircle activeRatingCircle"
+            />
+            <span
+              class="ratingCircle activeRatingCircle"
+            />
+            <span
+              class="ratingCircle false"
+            />
+            <span
+              class="ratingCircle false"
+            />
+          </div>
+          <span
+            class="ratingValue"
+          >
+            별점:
+            3
+          </span>
+          <div
+            class="userName"
+          >
+            John Doe
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</div>
+`;
+
+exports[`renders textInputs unchanged 1`] = `
+<div>
+  <form
+    class="form"
+  >
+    <div
+      class="textInputContainer"
+    >
+      <div
+        class="textInputBlock false"
+      >
+        <textarea
+          class="input"
+          maxlength="500"
+          placeholder="내용을 입력해 주세요."
+          spellcheck="false"
+        >
+          초기값이 있을 수 있습니다.
+        </textarea>
+        <span
+          class="remainingLength"
+        >
+          485
+        </span>
+      </div>
+    </div>
+    <div
+      class="textInputContainer"
+    >
+      <div
+        class="textInputBlock false"
+      >
+        <textarea
+          class="input"
+          disabled=""
+          maxlength="500"
+          placeholder="주문 요청사항을 입력해 주세요."
+          spellcheck="false"
+        />
+        <span
+          class="remainingLength"
+        >
+          500
+        </span>
+      </div>
+    </div>
+    <div
+      class="textInputContainer"
+    >
+      <div
+        class="textInputBlock false"
+      >
+        <textarea
+          class="input"
+          maxlength="500"
+          placeholder=""
+          readonly=""
+          spellcheck="false"
+        >
+          읽기 전용 상태입니다.
+        </textarea>
+        <span
+          class="remainingLength"
+        >
+          488
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
+`;
