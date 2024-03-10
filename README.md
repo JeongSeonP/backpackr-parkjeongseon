@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✨ UI 모듈 구현
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-v14.1.2-F4F4F4?logo=next.js)
+![React](https://img.shields.io/badge/React-v^18-61dafb?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-v^5-3178c6?logo=typescript)
+![Sass](https://img.shields.io/badge/Sass-v^1.71.1-c69?logo=sass)
 
-First, run the development server:
+1. 카드 UI
+2. 입력 폼 UI
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 배포 링크
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🖼️ [https://backpackr-parkjeongseon.vercel.app](https://backpackr-parkjeongseon.vercel.app)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 기술 스택, 기술 선정 이유
 
-## Learn More
+### Next.js
 
-To learn more about Next.js, take a look at the following resources:
+- SSR을 통한 SEO최적화를 가능하게 합니다.
+- Nest.js에 내장된 SWC를 통해 최신문법으로 작성된 코드를 트랜스파일하여 다양한 브라우저 환경에서의 접근성을 높일 수 있습니다.
+- 채택한 기술스택 SASS 컴파일을 지원하여 특별한 설정없이 사용 가능 합니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Sass
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 기존에 진행했던 프로젝트에서 사용하지 않았던 방식으로 스타일링하기 위해 우대사항에 포함된 Sass를 사용하기로 결정했고 컴포넌트별 스타일 유지보수에 용이한 CSS modules방식과 결합하여 사용하였습니다.
 
-## Deploy on Vercel
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 작성자
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+박정선 (✉️ finchblue8@gmail.com)
