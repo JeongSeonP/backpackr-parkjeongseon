@@ -27,16 +27,20 @@ export default function TextInput({ option }: TextInputProps) {
           isTyping.current && styles.activeInputBlock
         }`}
       >
-        <textarea
-          value={inputValue}
-          placeholder={option.placeHolder}
-          onChange={(e) => onInputChange(e)}
-          className={styles.input}
-          maxLength={500}
-          disabled={disabledState}
-          readOnly={readonlyState}
-          spellCheck={false}
-        />
+        <label>
+          <span className={styles.labelText}>{option.label}</span>
+          <textarea
+            value={inputValue}
+            placeholder={option.placeHolder}
+            onChange={(e) => onInputChange(e)}
+            className={styles.input}
+            maxLength={maxInputLength}
+            disabled={disabledState}
+            readOnly={readonlyState}
+            spellCheck={false}
+          />
+        </label>
+
         <span className={styles.remainingLength}>
           {maxInputLength - inputValue.length}
         </span>
