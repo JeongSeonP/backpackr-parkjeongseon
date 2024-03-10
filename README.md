@@ -10,10 +10,9 @@
 
 🖼️ 배포 링크 [https://backpackr-parkjeongseon.vercel.app](https://backpackr-parkjeongseon.vercel.app)
 
-
 <br/>
 
-## 🧩 기술 스택, 기술 선정 이유
+## 🧩 기술 선정 이유
 
 ### Next.js
 
