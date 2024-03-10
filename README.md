@@ -8,13 +8,12 @@
 1. 카드 UI
 2. 입력 폼 UI
 
-## 배포 링크
+🖼️ 배포 링크 [https://backpackr-parkjeongseon.vercel.app](https://backpackr-parkjeongseon.vercel.app)
 
-🖼️ [https://backpackr-parkjeongseon.vercel.app](https://backpackr-parkjeongseon.vercel.app)
 
 <br/>
 
-## 기술 스택, 기술 선정 이유
+## 🧩 기술 스택, 기술 선정 이유
 
 ### Next.js
 
@@ -28,6 +27,6 @@
 
 <br/>
 
-## 작성자
+## 👩‍💻 작성자
 
 박정선 (✉️ finchblue8@gmail.com)
